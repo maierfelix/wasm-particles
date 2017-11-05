@@ -1,0 +1,30 @@
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600&subset=latin-ext,latin" rel="stylesheet" type="text/css">
+
+<div class="lbl"></div>
+
+<canvas id="canvas"></canvas>
+
+<script type="text/javascript" src="../dist/bundle.js"></script>
+
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: #000000;
+  }
+  .lbl {
+    font-family: "Open sans";
+    font-weight: 300;
+    font-size: 18px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    color: #fff;
+    user-select: none;
+    cursor: default;
+  }
+</style>
+
+<script>
+(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='./stats.min.js';document.head.appendChild(script);})()
+</script>
